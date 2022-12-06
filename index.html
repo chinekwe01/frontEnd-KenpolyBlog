@@ -62,16 +62,25 @@
             what's going on!
           </p>
 
-          <div class="tw-flex tw-justify-center">
-            <span class="bg-gray-100 inline-block rounded-xl">
+          <div class="tw-flex tw-justify-center space-x-4">
+            <!-- Category -->
+            <span
+              class="relative inline-flex items-center bg-gray-100 inline-block rounded-xl"
+            >
               <select
-                class="appearance-none bg-transparent py-2 px-5 text-sm font-semibold"
+                class="appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold"
               >
                 <option value="category" disabled selected>Category</option>
                 <option value="personal">Personal</option>
                 <option value="business">Business</option>
               </select>
-              <svg width="22" height="22" viewBox="0.83 1 20.15 20.15">
+              <svg
+                class="transform -rotate-90 absolute pointer-events-none"
+                style="right: 12px"
+                width="22"
+                height="22"
+                viewBox="0.83 1 20.15 20.15"
+              >
                 <g fill="none" fill-rule="evenodd">
                   <path
                     stroke="#000"
@@ -86,8 +95,53 @@
                 </g>
               </svg>
             </span>
-            <span>Other Filters</span>
-            <span>Search</span>
+            <!-- Other Filters -->
+            <span
+              class="relative inline-flex items-center bg-gray-100 inline-block rounded-xl"
+            >
+              <select
+                class="appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold"
+              >
+                <option value="category" disabled selected>
+                  Other Filters
+                </option>
+                <option value="foo">Foo</option>
+                <option value="bar">Bar</option>
+              </select>
+              <svg
+                class="transform -rotate-90 absolute pointer-events-none"
+                style="right: 12px"
+                width="22"
+                height="22"
+                viewBox="0.83 1 20.15 20.15"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    stroke="#000"
+                    stroke-opacity=".012"
+                    stroke-width=".5"
+                    d="M21 1v20.16H.84V1z"
+                  ></path>
+                  <path
+                    class="fill-current"
+                    d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            <!-- Search -->
+            <span
+              class="relative inline-flex items-center bg-gray-100 inline-block rounded-xl px-3 py-2"
+            >
+              <form action="#" method="get">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Find Something"
+                  class="bg-transparent placeholder-black text-sm font-semibold"
+                />
+              </form>
+            </span>
           </div>
         </div>
       </header>
